@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>我的个人网站</title>
+		<style>
+			*{margin: 0; padding: 0;}
+			ul{list-style: none;}
+ 			a{text-decoration: none;color: inherit;}
+			#header{
+				height: 78px;
+				background: gray;
+				line-height: 78px;
+				font-size: 24px;
+				color: white;
+				padding: 0 calc(50% - 530px);
+			}
+			#header::after{
+				content: "";
+				display: block;
+				clear: both;
+			}
+			#header ul{
+				height: 100%;
+				float: right;
+				font-size: 16px;
+			}
+			#header ul li{
+				float: left;
+				width: 100px;
+			}
+			#main{
+				width: 1060px;
+				margin: 10px auto;
+			}
+			#main .banner{
+				width: 100%;
+			}
+			#main img{
+				width: 100%;
+			}
+			#main ul::after{
+				content: "";
+				display: block;
+				clear: both;
+			}
+			#main ul{
+				width: 100%;
+			}
+			#main ul li{
+				float: left;
+				width: 30%;
+				height: 300px;
+				margin: 16px;
+				overflow: hidden;
+				border: 1px solid #ddd;
+			}
+			#footer{
+				width: 1060px;
+				margin: 10px auto;
+
+			}
+			#footer p{
+				width: 100%;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<header id="header">
+			logo
+			<ul>
+				<li><a href="#">关于我</a></li>
+				<li><a href="#">我的作品</a></li>
+				<li><a href="#">联系方式</a></li>
+			</ul>
+		</header>
+		<main id="main">
+			<div class="banner">
+				<img src="./123.png">
+			</div>
+			<div class="main_content">
+				
+				<ul>
+					<li><a href="#"><img src="./456.jpg"></a></li>
+					<li><a href="#"><img src="./1234.jpg"></a></li>
+					<li><a href="#"><img src="./12345.jpg"></a></li>
+				</ul>
+			</div>
+		</main>
+		<footer id="footer">
+			<p><a href="#">用户协议</a> | <a href="#">隐私协议</a></p>
+			<p><a href="#">所有权为xxxx.com所有</a></p>
+		</footer>
+	</body>
+</html>
